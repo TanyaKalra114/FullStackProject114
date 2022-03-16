@@ -74,3 +74,18 @@ transition: 1s;
     transform:scale(1.1);
     z-index: 1;
 }
+
+.b2{
+    width: 265px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0, .1);
+transition: 1s;
+
+
+}
+.b2 img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    
+}
