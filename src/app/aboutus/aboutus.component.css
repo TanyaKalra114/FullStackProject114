@@ -1,0 +1,12 @@
+.container-box{
+    width:90%;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    
+    
+}
