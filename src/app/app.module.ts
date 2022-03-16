@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
+ import {FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -36,11 +37,14 @@ import { InsuranceproductsLifeComponent } from './insuranceproducts-life/insuran
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
