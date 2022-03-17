@@ -17,9 +17,12 @@ import { InsuranceproductsComponent } from './insuranceproducts/insuranceproduct
 import { FileclaimComponent } from './fileclaim/fileclaim.component';
 import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
-import { InsuranceproductsCarComponent } from './insuranceproducts-car/insuranceproducts-car.component';
-import { InsuranceproductsHomeComponent } from './insuranceproducts-home/insuranceproducts-home.component';
-import { InsuranceproductsLifeComponent } from './insuranceproducts-life/insuranceproducts-life.component';
+
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { LoginComponent } from './login/login.component';
+import { ProductsCarComponent } from './insuranceproducts/products-car/products-car.component';
+import { ProductsHomeComponent } from './insuranceproducts/products-home/products-home.component';
+import { ProductsLifeComponent } from './insuranceproducts/products-life/products-life.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +34,14 @@ import { InsuranceproductsLifeComponent } from './insuranceproducts-life/insuran
     FileclaimComponent,
     SignupComponent,
     FooterComponent,
-    InsuranceproductsCarComponent,
-    InsuranceproductsHomeComponent,
-    InsuranceproductsLifeComponent
+    
+    
+   
+    LoginComponent,
+    NoPageFoundComponent,
+    ProductsCarComponent,
+    ProductsHomeComponent,
+    ProductsLifeComponent
   ],
   imports: [
     BrowserModule,

@@ -3,28 +3,35 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FileclaimComponent } from './fileclaim/fileclaim.component';
 import { HomeComponent } from './home/home.component';
-import { InsuranceproductsCarComponent } from './insuranceproducts-car/insuranceproducts-car.component';
-import { InsuranceproductsHomeComponent } from './insuranceproducts-home/insuranceproducts-home.component';
-import { InsuranceproductsLifeComponent } from './insuranceproducts-life/insuranceproducts-life.component';
+
 import { InsuranceproductsComponent } from './insuranceproducts/insuranceproducts.component';
 import { SignupComponent } from './signup/signup.component';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { LoginComponent } from './login/login.component';
+import { ProductsCarComponent} from './insuranceproducts/products-car/products-car.component';
+import { ProductsHomeComponent} from './insuranceproducts/products-home/products-home.component';
+import { ProductsLifeComponent } from './insuranceproducts/products-life/products-life.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path:'home',component:HomeComponent},
   {path:'aboutus', component: AboutusComponent},
   {path:'insuranceproducts', 
-  component: InsuranceproductsComponent,
+ 
   children:[
-  {path:'insuranceproducts-car',component:InsuranceproductsCarComponent},
-  {path:'insuranceproducts-home',component:InsuranceproductsHomeComponent},
-  {path:'insuranceproducts-life',component:InsuranceproductsLifeComponent}
+    {path:'', component: InsuranceproductsComponent},
+  {path:'products-car',component:ProductsCarComponent},
+  {path:'products-home',component:ProductsHomeComponent},
+  {path:'products-life',component:ProductsLifeComponent}
 ]
 
 },
 
 
   {path:'fileclaim', component: FileclaimComponent},
-  {path:'signup', component:SignupComponent}
+  {path:'signup', component:SignupComponent},
+  {path:'login',component:LoginComponent},
+  { path: '**', component: NoPageFoundComponent }
 
 ];
 
