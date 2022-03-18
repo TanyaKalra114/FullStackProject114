@@ -1,0 +1,43 @@
+.secRight{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.paras{
+    padding: 0px, 64px;
+    box-shadow: 10px 10px 8px -8px #864dce;
+}
+
+p{
+    
+   
+    font-size: 16px;
+    color: #353535;
+    line-height: 24px;
+    margin: 15px 0;
+    
+}
+h1{
+    
+    
+    font-weight: 150;
+    font-size: 30px;
+}
+
+.car-name
+{
+	background-color:#ffc107;
+	font-size:20px;
+}
+.cars
+{
+	border:2px solid black;
+	box-shadow: 5px 5px #888888;
+	padding: 5px;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+}

@@ -1,5 +1,5 @@
 .secRight{
-    height: 500px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -11,5 +11,26 @@
     box-shadow: 10px 10px 8px -8px #864dce;
 }
 .paras a{
-    margin-left: 14px;
+    margin-left: 4px;
+}
+.thumbnail{
+    padding-left: 17px;
+    padding-right: 9px;
+
+    
+}
+p{
+    
+   
+    font-size: 16px;
+    color: #353535;
+    line-height: 24px;
+    margin: 15px 0;
+    
+}
+h1{
+    
+    color: #333;
+    font-weight: 150;
+    font-size: 30px;
 }

@@ -1,5 +1,8 @@
 h1{
     text-align: center;
+    color: #333;
+    font-weight: 300;
+    font-size: 40px;
 }
 .product-heading {
     position:relative;
