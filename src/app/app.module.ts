@@ -2,6 +2,7 @@
  import {FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
 import { ProductsCarComponent } from './insuranceproducts/products-car/products-car.component';
 import { ProductsHomeComponent } from './insuranceproducts/products-home/products-home.component';
 import { ProductsLifeComponent } from './insuranceproducts/products-life/products-life.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { ProductsLifeComponent } from './insuranceproducts/products-life/product
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
 
   ],
   providers: [],

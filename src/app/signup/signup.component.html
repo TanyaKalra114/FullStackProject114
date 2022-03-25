@@ -1,1 +1,40 @@
-<p>signup works!</p>
+
+<div class="container">
+<h1> Enter your Details</h1>
+<div class="cards-conatiner">
+    <div class="cards-form">
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+<div class="form-group">
+<label for="">Name </label>
+<input type="text" name="Name" [(ngModel)]="customer.customer_name">
+</div>
+<div class="form-group">
+    <label for="">Gender</label>
+    <input type="text" name="Gender" [(ngModel)]="customer.gender">
+    </div>
+    <div class="form-group">
+        <label for="">Date of Birth</label>
+        <input type="date" name="DOB" [(ngModel)]="customer.date_of_birth">
+        </div>
+        <div class="form-group">
+            <label for="">Mobile No.</label>
+            <input type="number" name="cardName" [(ngModel)]="customer.phone_no">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name="email" [(ngModel)]="customer.email">
+                </div>
+
+<div class="form-group">
+    <button>SignUp</button>
+</div>
+
+
+</form>
+
+
+    </div>
+</div>
+
+
+
