@@ -1,27 +1,52 @@
-<p>products-car works!</p>
 
 <div class="container">
-    <h1> Buy Car Insurance</h1>
-    <form #login="ngForm" (ngSubmit)="submit(login)">
+    <h1> Enter the Details</h1>
+    <div class="cards-conatiner">
+        <div class="cards-form">
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label for="">Car Model Number</label>
+    <input type="text" name="model_no" [(ngModel)]="car.model_no">
+    </div>
+    <div class="form-group">
+        <label for="">Policy Start Date</label>
+        <input type="date" name="start_date"[(ngModel)]="car.start_date">
+        </div>
         <div class="form-group">
-            <label for="firstname"> Firstname</label><br>
-            <input #name="ngModel" required minlength="2" maxlength="7" type="text"name="firstname" class="form-control" ngModel>
-            <div *ngIf = "name.touched && name.invalid" class="alert alert-danger"> INVALID </div>
-        </div>
-        <pre></pre>
-
-        <div class="form-group">
-            <label for="lastname"> Lastname</label><br>
-            <input type="text"name="lastname" class="form-control" ngModel>
-        </div>
-        <pre></pre>
-        <div class="form-group">
-            <label for="email"> Email</label><br>
-            <input type="text"name="email" class="form-control" ngModel>
-        </div>
-        <pre></pre>
-        <div class="s">
-        <button routerLink= "/login" class="btn btn-primary" type="submit"> Submit</button>
-        </div>
+            <label for="">Policy End Date</label>
+            <input type="date" name="end_date" [(ngModel)]="car.end_date">
+            </div>
+            <div class="form-group">
+                <label for="">Policy Type</label>
+                <input type="text" name="policy_type" [(ngModel)]="car.policy_type">
+                </div>
+                
+    
+    <div class="form-group">
+        <button>Buy Now</button>
+    </div>
     </form>
+    
+    
+        </div>
+
+        <div class="cards-grid">
+        <div class="card-row" *ngFor="let car of cars">
+
+    <div class="card-row-details">
+    <span>{{car.policy_type}}</span>
+    <span>{{car.model_no}}</span>
+    
+
+    </div>
+    <div class="card-row-action">
+    <a><i class="fa-solid fa-trash-can"></i></a>
 </div>
+
+        </div>
+        </div>
+</div>
+    
+    
+    
+    
