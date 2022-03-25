@@ -25,6 +25,7 @@ import { ProductsCarComponent } from './insuranceproducts/products-car/products-
 import { ProductsHomeComponent } from './insuranceproducts/products-home/products-home.component';
 import { ProductsLifeComponent } from './insuranceproducts/products-life/products-life.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClaimNowComponent } from './fileclaim/claim-now/claim-now.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     NoPageFoundComponent,
     ProductsCarComponent,
     ProductsHomeComponent,
-    ProductsLifeComponent
+    ProductsLifeComponent,
+    ClaimNowComponent
   ],
   imports: [
     BrowserModule,

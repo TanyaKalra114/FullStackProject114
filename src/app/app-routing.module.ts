@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ProductsCarComponent} from './insuranceproducts/products-car/products-car.component';
 import { ProductsHomeComponent} from './insuranceproducts/products-home/products-home.component';
 import { ProductsLifeComponent } from './insuranceproducts/products-life/products-life.component';
+import { ClaimNowComponent } from './fileclaim/claim-now/claim-now.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,7 +29,12 @@ const routes: Routes = [
 },
 
 
-  {path:'fileclaim', component: FileclaimComponent},
+  {path:'fileclaim',
+  children:[
+  {path:'', component: FileclaimComponent},
+  {path:'claim-now',component:ClaimNowComponent}
+  ]
+  },
   {path:'signup', component:SignupComponent},
   {path:'login',component:LoginComponent},
   { path: '**', component: NoPageFoundComponent }
