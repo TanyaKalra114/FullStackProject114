@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from '../models/customer.model';
 import { CustomersService } from '../service-signup/customers.service';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-signup',
@@ -19,9 +21,13 @@ customer:Customer={
   email:''
 
 }
-  constructor(private customersService:CustomersService) {
+
+
+  constructor(private customersService:CustomersService,
+    private snackBar: MatSnackBar ) {
 
    }
+
 
   ngOnInit(): void {
 this.getAllCustomers();
@@ -59,4 +65,10 @@ this.customersService.addCustomer(this.customer)
   }
 )
   }
+  
+openSnackBar(message: string,action: string | undefined){
+  this.snackBar.open(message, action);
+}
+  
+  
 }
