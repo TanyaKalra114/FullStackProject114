@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Claim } from '../../models/claim.model';
 import { ClaimsService } from '../../service-claim/claims.service';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-claim-now',
@@ -18,7 +19,8 @@ policy_type:''
 
 }
 
-  constructor(private claimsService:ClaimsService){
+  constructor(private claimsService:ClaimsService,
+    private snackBar: MatSnackBar ){
 
   }
 
@@ -66,5 +68,8 @@ policy_type:''
         }
       );
     }
-
+    openSnackBar(message: string,action: string | undefined){
+      this.snackBar.open(message, action);
+    }
+      
 }

@@ -2,7 +2,7 @@
 
      
 <div class="container">
-    <h1> INSURANCE CLAIM FORM</h1>
+    <h1> <u>INSURANCE CLAIM FORM </u></h1>
     <div class="cards-conatiner">
         <div class="cards-form">
     <form #form="ngForm" (ngSubmit)="onSubmit()" >
@@ -18,7 +18,7 @@
                 
     
     <div class="form-group">
-        <button>Claim Now</button>
+        <button  mat-button (click)="openSnackBar('Insurance Claimed Successfully','Dismiss')">Claim Now</button>
     </div>
     </form>
     

@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './products-life.component.html',
   styleUrls: ['./products-life.component.css']
 })
-export class ProductsLifeComponent implements OnInit {
+export class ProductsLifeComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  submit(login: any){
+    console.log("form submitted", login)
   }
 
 }
