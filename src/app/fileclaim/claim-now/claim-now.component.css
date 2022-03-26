@@ -10,9 +10,7 @@
     max-width: 1000px;
     margin: 0 auto;
 }
-h1{
-    text-align: center;
-}
+
 .cards-conatiner{
     display: flex;
     width: 100%;
@@ -80,3 +78,7 @@ form button{
     background-color: blue;
     color: white;
 }
+h1{
+    margin-left: 25px;
+}
+

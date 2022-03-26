@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../../models/carPolicy.model';
 import { CarsService } from '../../service-carPolicy/cars.service';
+import {MatSnackBar, MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-products-car',
@@ -21,7 +22,8 @@ policy_type:''
 
 }
    
-constructor(private carsService:CarsService){
+constructor(private carsService:CarsService,
+  private snackBar: MatSnackBar){
 
 }
 
@@ -60,5 +62,9 @@ policy_type:'',
     }
   )
     }
+    openSnackBar(message: string,action: string | undefined){
+      this.snackBar.open(message, action);
+    }
+      
 
 }

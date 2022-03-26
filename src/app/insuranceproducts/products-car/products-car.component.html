@@ -1,6 +1,6 @@
 
 <div class="container">
-    <h1> Enter the Details</h1>
+    <h1> BUY CAR INSURANCE</h1>
     <div class="cards-conatiner">
         <div class="cards-form">
     <form #form="ngForm" (ngSubmit)="onSubmit()">
@@ -23,7 +23,7 @@
                 
     
     <div class="form-group">
-        <button>Buy Now</button>
+        <button mat-button (click)="openSnackBar('Bought Car Insurance Successfully','Dismiss')">Buy Now</button>
     </div>
     </form>
     
