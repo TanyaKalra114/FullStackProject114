@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Claim } from '../../models/claim.model';
+import { ClaimsService } from '../../service-claim/claims.service';
 
 @Component({
   selector: 'app-claim-now',
@@ -6,10 +8,63 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./claim-now.component.css']
 })
 export class ClaimNowComponent implements OnInit {
+title="claim";
+claims:Claim[]=[];
+claim:Claim={
+claim_id:'',
+policy_no:'',
+policy_type:''
+  
 
-  constructor() { }
+}
+
+  constructor(private claimsService:ClaimsService){
+
+  }
 
   ngOnInit(): void {
-  }
+    this.getAllClaims();
+    
+      }
+    
+      getAllClaims(){
+        this.claimsService.getAllClaims()
+        .subscribe(
+          response =>{
+            this.claims=response;
+          }
+        );
+    
+      }
+    
+      onSubmit(){
+    
+    this.claimsService.addClaim(this.claim)
+    .subscribe(
+      response=>{
+        console.log(response);
+        this.getAllClaims();
+        this.claim={
+          claim_id:'',
+  policy_no:'',
+  policy_type:'',
+    
+          
+        }
+    
+      }
+    );}
+
+    //delete claim
+    deleteClaim(claim_id:string){
+      
+     this.claimsService.deleteClaim(claim_id)
+      .subscribe(
+        response =>{
+         
+          this.getAllClaims();
+        }
+      );
+    }
 
 }
