@@ -2,6 +2,9 @@
     text-align: center;
     margin-top: 9px;
 }
+input{
+    box-shadow: 10px 10px 8px -8px lightblue;
+}
 .s{
     padding-bottom: 17px;
 }
