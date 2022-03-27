@@ -4,6 +4,11 @@ h1{
     font-weight: 300;
     font-size: 40px;
 }
+
+    
+    
+
+
 .product-heading {
     position:relative;
     padding: 7px;
@@ -54,11 +59,28 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
-    
+      
     
 }
+.policy{
+    width: 80%;
+    margin: 0 20px 20px 20px;
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+    margin: 50px auto;
+}
+.check{
+    align-items: center;
+    align-content: center;
+}
+.card{
+
+    margin: 30px 20px 30px 20px;
+    padding: 20px;
+}
+
+
+
 .box{
     width: 255px;
     margin: 0 10px;
@@ -78,6 +100,22 @@ transition: 1s;
     transform:scale(1.1);
     z-index: 1;
 }
+
+
+.card img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.card :hover{
+    transform:scale(1.1);
+    z-index: 1;
+}
+
+
+
+
 
 .b2{
     width: 265px;

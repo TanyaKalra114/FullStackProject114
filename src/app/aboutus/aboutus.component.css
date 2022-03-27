@@ -1,13 +1,20 @@
 .container-box{
-    width:90%;
-    padding: 20px;
-    margin: 50px auto;
+    width:100%;
+    
+    
+    justify-content: center;  
+    
+}
+h2 {
+    font-size: 3.0vh;
+    }
+.container-box img{
+    width:100%;
+    
+    margin:  auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
-    
-    
+    justify-content: center;  
     
 }
 h1{
@@ -17,10 +24,15 @@ h1{
 }
 p{
     
-   
+   padding:0 5% 10% 5%;
     font-size: 16px;
     color: #353535;
     line-height: 24px;
     margin: 15px 0;
+    
+}
+
+.box{
+    
     
 }
