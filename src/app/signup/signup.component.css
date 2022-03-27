@@ -28,7 +28,8 @@ form .form-group{
 form label{
     display: block;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-size: medium;
+    
 }
 form input{
     width: 100%;
@@ -38,7 +39,7 @@ form input{
 }
 
 form button{
-    background-color: rgb(64, 64, 163);
+    
     padding: 0.5em 1em;
     color: white;
     border: none;
@@ -46,7 +47,4 @@ form button{
     border-radius: 2px;
     cursor: pointer;
     font-size: 1.2em;
-}
-input{
-    border: 2px solid rgb(64, 64, 163);
 }

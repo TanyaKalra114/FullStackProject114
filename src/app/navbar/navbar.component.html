@@ -1,6 +1,8 @@
-<mat-toolbar color="primary" class="mat-elevation-z6">
+<!--<nav class="navbar-expand-lg">
+ <mat-toolbar color="primary" class="mat-elevation-z6">
     <span> <a routerLink="home" mat-button>Insurance</a> </span>
     <div class="spacer"> </div>
+    
     <div class="b1">
     <a routerLink="" mat-button>Home</a>
     
@@ -13,5 +15,40 @@
     </div>
     
   </mat-toolbar>
+</nav>
+<br>-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"  >
   
-  
+  <div class="container-fluid" >
+    <span> <a routerLink="home" mat-button>Insurance</a> </span>
+    <div class="new"> </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText"  >
+      <ul class="navbar-nav ml-auto" >
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" class="clr" mat-button>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="aboutus" mat-button class="clr"> AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" mat-button class="clr" routerLink="insuranceproducts">Insurance Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="fileclaim" class="clr" mat-button> File a Claim</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" routerLink="signup" class="clr" mat-button> SignUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login" class="clr" mat-raised-button color="accent"> Login</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+
+</nav>

@@ -1,10 +1,10 @@
-
+<br><br>
 <div class="login">
 <img src="../../assets/login.png" alt="car policy" width="15%">
 </div>
 <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
     <div class="container-fluid">
-        <h2 class="form-signin-heading">Login </h2>
+        <h1>Existing User Sign In </h1>
         <div *ngIf="invalidLogin"  class="alert alert-danger"> Invalid username or password </div>
         <br>
         <label for="username" class="sr-only"> Email address </label>
@@ -14,7 +14,7 @@
         <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Password" required>
         <br>
         <div class="s">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
 </div>
     </div>
 

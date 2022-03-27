@@ -28,7 +28,7 @@ form .form-group{
 form label{
     display: block;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-size: medium;
 }
 form input{
     width: 50%;
@@ -74,14 +74,20 @@ form button{
 .card-row-action a{
     display: block;
     cursor: pointer;
-    padding:1em;
-    background-color: blue;
+    
+   
     color: white;
+}
+.card-row-action button{
+    color: white;
+    background-color: blue;
+    border: 0;
+    padding: 0.5em;
 }
 h1{
     margin-left: 25px;
 }
 
 input{
-    border: 2px solid lightskyblue;
+    
 }

@@ -1,32 +1,32 @@
 
 <div class="container">
-<h1> <u>SIGN UP FORM </u></h1>
+<h1> New User Sign Up</h1>
 <div class="cards-conatiner">
     <div class="cards-form">
 <form #form="ngForm" (ngSubmit)="onSubmit()">
 <div class="form-group">
-<label for="">Name </label>
-<input type="text" name="Name" [(ngModel)]="customer.customer_name">
+<label class="form-label">Name </label>
+<input  class="form-control" type="text" placeholder="Full Name" name="Name" [(ngModel)]="customer.customer_name">
 </div>
 <div class="form-group">
     <label for="">Gender</label>
-    <input type="text" name="Gender" [(ngModel)]="customer.gender">
+    <input class="form-control" type="text" name="Gender" [(ngModel)]="customer.gender" placeholder="Female/Male/Other">
     </div>
     <div class="form-group">
         <label for="">Date of Birth</label>
-        <input type="date" name="DOB" [(ngModel)]="customer.date_of_birth">
+        <input  class="form-control" type="date" name="DOB" [(ngModel)]="customer.date_of_birth" >
         </div>
         <div class="form-group">
             <label for="">Mobile No.</label>
-            <input type="number" name="cardName" [(ngModel)]="customer.phone_no">
+            <input class="form-control" type="number" name="cardName" [(ngModel)]="customer.phone_no" >
             </div>
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" name="email" [(ngModel)]="customer.email">
+                <input class="form-control" type="email" name="email" [(ngModel)]="customer.email" placeholder="example@xyz.com">
                 </div>
 
 <div class="form-group">
-    <button  mat-button (click)="openSnackBar('Signed Up Successfully','Dismiss')">SignUp</button>
+    <button class="btn btn-lg btn-primary btn-block"  (click)="openSnackBar('Signed Up Successfully','Dismiss')">Create Account</button>
 </div>
 
 

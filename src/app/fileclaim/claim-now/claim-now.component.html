@@ -2,17 +2,17 @@
 
      
 <div class="container">
-    <h1> <u>INSURANCE CLAIM FORM </u></h1>
+    <h1> Enter Policy Details</h1>
     <div class="cards-conatiner">
         <div class="cards-form">
     <form #form="ngForm" (ngSubmit)="onSubmit()" >
     <div class="form-group">
     <label for="">Policy Number</label>
-    <input type="text" name="policy_no" [(ngModel)]="claim.policy_no" >
+    <input class="form-control" type="text" name="policy_no" [(ngModel)]="claim.policy_no" >
     </div>
     <div class="form-group">
         <label for="">Policy Type</label>
-        <input type="text" name="policy_type" [(ngModel)]="claim.policy_type" >
+        <input class="form-control" type="text" name="policy_type" [(ngModel)]="claim.policy_type" >
         </div>
    
                 
@@ -35,7 +35,7 @@
 
     </div>
     <div class="card-row-action">
-    <a (click)="deleteClaim(claim.claim_id)"><i class="fa-solid fa-trash-can"></i></a>
+    <a (click)="deleteClaim(claim.claim_id)"><button>Cancel Claim</button></a>
 </div>
 
         </div>
