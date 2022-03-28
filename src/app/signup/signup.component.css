@@ -24,6 +24,9 @@ h1{
 form .form-group{
     margin-bottom: 1em;
 }
+input{
+    box-shadow: 10px 10px 8px -8px lightblue;
+}
 
 form label{
     display: block;

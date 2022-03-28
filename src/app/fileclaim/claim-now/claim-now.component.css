@@ -5,6 +5,9 @@
     box-sizing:border-box;
 
 }
+input{
+    box-shadow: 10px 10px 8px -8px lightblue;
+}
 .container{
     padding: 3em;
     max-width: 1000px;
